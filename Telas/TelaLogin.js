@@ -2,10 +2,18 @@ import React from 'react';
 import { Text, View, Image,TextInput,TouchableOpacity,ImageBackground,KeyboardAvoidingView, Platform } from 'react-native'
 import styles from '../Styles/Estilos'
 import{Ionicons} from '@expo/vector-icons'
+import * as Animatable from 'react-native-animatable'
+import {useNavigation} from '@react-navigation/native'
+
 export function TelaLogin() {
+
+  const navigation = useNavigation();
+
+
   return (
     //View de container - todas são filhas dela
-    <KeyboardAvoidingView style={styles.container}behavior={Platform.OS == "ios" ? "padding" : "height"}>
+    <Animatable.View animation={'fadeInUp'}  style={styles.container}>
+
       <Image
         source={require("../assets/logo_tama.jpg")}
         style={styles.logo}/>
@@ -31,13 +39,12 @@ export function TelaLogin() {
           <Text style={styles.textbutton}>Login</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.register}>
+        <TouchableOpacity style={styles.register} onPress={() => navigation.navigate(TelaCadastro)}>
           <Text style={styles.registertext}>Não Possui uma conta? Cadastre-se</Text>
         </TouchableOpacity>
 
 
       </View>
-      
-    </KeyboardAvoidingView>
+    </Animatable.View>
   );
 }
