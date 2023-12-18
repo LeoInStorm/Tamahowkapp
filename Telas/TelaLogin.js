@@ -27,9 +27,14 @@ export function TelaLogin() {
       </View>
     
       <View>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.buttonLogin}>
           <Text style={styles.textbutton}>Login</Text>
         </TouchableOpacity>
+
+        <TouchableOpacity style={styles.register}>
+          <Text style={styles.registertext}>Não Possui uma conta? Cadastre-se</Text>
+        </TouchableOpacity>
+
 
       </View>
       

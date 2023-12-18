@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
 
     textlogin: {
       marginTop: '10%',
-      marginBottom: '25%',
+      marginBottom: '15%',
       textAlign: 'center',
       fontSize: 20,
       fontWeight: 'bold',
@@ -42,11 +42,11 @@ const styles = StyleSheet.create({
       fontWeight: 'bold',
     },
     
-    button: {
+    buttonLogin: {
       position:'absolute',
-      marginTop: "20%",
-      width: '30%',
-      height:'10%',
+      marginTop: "10%",
+      width: '60%',
+      height: 30,
       backgroundColor: '#FFFFFF',
       alignSelf: 'center',
       borderRadius: 30,
@@ -56,8 +56,17 @@ const styles = StyleSheet.create({
     textbutton: {
       fontSize:18,
       fontWeight: 'bold',
+    },
 
+    register: {
+      marginTop: '30%'
+    },
+
+    registertext: {
+      fontWeight:'bold'
     }
+
+
 
 
   })
