@@ -4,9 +4,6 @@ import styles from '../Styles/Estilos'
 import{Ionicons} from '@expo/vector-icons'
 import * as Animatable from 'react-native-animatable'
 import {useNavigation} from '@react-navigation/native'
-import { TelaCadastro } from './TelaCadastro';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-
 export function TelaLogin() {
 
   const navigation = useNavigation();
