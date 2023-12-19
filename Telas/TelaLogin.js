@@ -1,9 +1,11 @@
 import React from 'react';
-import { Text, View, Image,TextInput,TouchableOpacity,ImageBackground,KeyboardAvoidingView, Platform } from 'react-native'
+import { Text, View, Image,TextInput,TouchableOpacity,ImageBackground, Platform } from 'react-native'
 import styles from '../Styles/Estilos'
 import{Ionicons} from '@expo/vector-icons'
 import * as Animatable from 'react-native-animatable'
 import {useNavigation} from '@react-navigation/native'
+import { TelaCadastro } from './TelaCadastro';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 export function TelaLogin() {
 
@@ -39,7 +41,7 @@ export function TelaLogin() {
           <Text style={styles.textbutton}>Login</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.register} onPress={() => navigation.navigate(TelaCadastro)}>
+        <TouchableOpacity style={styles.register} onPress={() => navigation.navigate('TelaCadastro')}>
           <Text style={styles.registertext}>Não Possui uma conta? Cadastre-se</Text>
         </TouchableOpacity>
 
