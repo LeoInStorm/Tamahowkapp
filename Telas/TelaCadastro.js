@@ -1,11 +1,12 @@
 import React from "react";
-import {View, Text, StyleSheet} from 'react-native'
+import {View, Text} from 'react-native'
+import styles from '../Styles/Estilos'
 
 
 export function TelaCadastro() {
 return(
-    <View>
-        <Text> Olá </Text>
+    <View style={styles.container}>
+        <Text style = {styles.textlogin}> Olá </Text>
 
     </View>
 );

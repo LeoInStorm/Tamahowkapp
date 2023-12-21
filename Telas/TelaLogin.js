@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, Image,TextInput,TouchableOpacity,ImageBackground, Platform } from 'react-native'
+import { Text, View, Image,TextInput,TouchableOpacity,ImageBackground} from 'react-native'
 import styles from '../Styles/Estilos'
 import{Ionicons} from '@expo/vector-icons'
 import * as Animatable from 'react-native-animatable'
@@ -34,11 +34,11 @@ export function TelaLogin() {
       </View>
     
       <View>
-        <TouchableOpacity style={styles.buttonLogin}>
+        <TouchableOpacity style={styles.buttonLogin} onPress= {() => navigation.navigate('TelaHome')}>
           <Text style={styles.textbutton}>Login</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.register} onPress={() => navigation.navigate('TelaCadastro')}>
+        <TouchableOpacity style={styles.register} onPress= {() => navigation.navigate('TelaCadastro')}>
           <Text style={styles.registertext}>Não Possui uma conta? Cadastre-se</Text>
         </TouchableOpacity>
 
