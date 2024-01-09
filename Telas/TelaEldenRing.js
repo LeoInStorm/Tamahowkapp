@@ -3,10 +3,10 @@ import {View, Text} from 'react-native'
 import styles from '../Styles/Estilos'
 
 
-export function TelaCadastro() {
+export function TelaEldenRing() {
 return(
     <View style={styles.container}>
-        <Text style = {styles.textlogin}> Tela de Cadastro </Text>
+        <Text style = {styles.textlogin}> Elden Ring</Text>
 
     </View>
 );
